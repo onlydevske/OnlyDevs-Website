@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 export default function Home() {
   return (
-      <div className='container mx-auto px-4'>
-          Home
-      </div>
+    <div>
+      <h1>home</h1>
+    </div>
   )
 }
