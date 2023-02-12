@@ -10,7 +10,7 @@ export default function Header() {
 
     return (
 
-        <nav className="bg-yellow-100 px-2 sm:px-4 py-2.5 dark:bg-gray-600 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <nav className="bg-yellow-200 px-2 sm:px-4 py-2.5 dark:bg-gray-600 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="" className="flex items-center">
                     <img src={Logo} className="h-20 object-cover mr-3 sm:h-19" alt="OnlyDevs Logo" />
