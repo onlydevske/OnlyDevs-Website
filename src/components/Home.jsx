@@ -1,8 +1,12 @@
 import React from 'react'
 import Header from './Header'
+import Stories from './Stories'
+import News from './News'
+import JoinUsForm from './JoinUsForm'
 
 export default function Home() {
     return (
+        <div>
         <section className="black-600 body-font">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -20,17 +24,19 @@ export default function Home() {
                             So what are you waiting for?
                         </strong></p>
                     <div className="flex lg:flex-row md:flex-col">
-                        <button className=" bg-yellow-500  inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                        <JoinUsForm/>
+                        {/* <button className=" bg-yellow-500  inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
                             <span className="ml-4 flex items-center flex-col leading-none">
                                 <span className="title-font black-500  font-bold">Join US</span>
                             </span>
-                        </button>
+                        </button> */}
                         <button className=" bg-yellow-500  inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
                             <span className="ml-4 flex items-centerflex-col leading-none">
                                 <span className="title-font black-500  font-bold">Our Events</span>
                             </span>
                         </button>
                     </div>
+                    
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <div className="flex flex-row">
@@ -51,6 +57,7 @@ export default function Home() {
             </div>
            
         </section>
-
+        <News/>
+        </div>
     )
 }
