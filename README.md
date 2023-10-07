@@ -2,44 +2,44 @@
 
 ![](https://paper-attachments.dropboxusercontent.com/s_BB8DF77ED8D0886DB47416B2BBF2D326C58CDE0EBF988A28C7CEA2DDFB59F803_1674049703193_2.png)
 
-*Welcome!
+Welcome!
 
-*We appreciate your interest in contributing to our open source project! This document outlines the guidelines for contributing, including how to report bugs, suggest *features, and submit pull requests.
+We appreciate your interest in contributing to our open source project! This document outlines the guidelines for contributing, including how to report bugs, suggest features, and submit pull requests.
 
-*Before you start
+Before you start
 
-*Please take some time to familiarize yourself with the project by reading the README file and browsing through the codebase. You can also join the project's community *chat or forum to ask questions and get help.
+Please take some time to familiarize yourself with the project by reading the README file and browsing through the codebase. You can also join the project's community chat or forum to ask questions and get help.
 
 Reporting bugs
 
-*If you find a bug in the project, please report it by creating a new issue on the project's GitHub repository. Be sure to include as much information as possible *about the bug, such as the steps to reproduce it and the expected vs. actual behavior.
+If you find a bug in the project, please report it by creating a new issue on the project's GitHub repository. Be sure to include as much information as possible about the bug, such as the steps to reproduce it and the expected vs. actual behavior.
 
-*Suggesting features
+Suggesting features
 
-*If you have an idea for a new feature, please suggest it by creating a new issue on the project's GitHub repository. Be sure to describe the feature in detail and *explain why it would be beneficial to the project.
+If you have an idea for a new feature, please suggest it by creating a new issue on the project's GitHub repository. Be sure to describe the feature in detail and explain why it would be beneficial to the project.
 
-*Submitting pull requests
+Submitting pull requests
 
-*When you're ready to contribute code to the project, please submit a pull request. Here are some tips for submitting a pull request:
+When you're ready to contribute code to the project, please submit a pull request. Here are some tips for submitting a pull request:
 
-*Create a new branch for your changes.
-*Make small, incremental changes.
-*Write clear and concise commit messages.
-*Add tests for your changes.
-*Follow the project's coding style guide.
-*Once you've submitted a pull request, one of the project maintainers will review it and provide feedback. If your changes are accepted, they will be merged into the *main branch and released in the next version of the project.
+Create a new branch for your changes.
+Make small, incremental changes.
+Write clear and concise commit messages.
+Add tests for your changes.
+Follow the project's coding style guide.
+Once you've submitted a pull request, one of the project maintainers will review it and provide feedback. If your changes are accepted, they will be merged into the main branch and released in the next version of the project.
 
-*Additional guidelines
+Additional guidelines
 
-*Be respectful of other contributors and maintainers.
-*Be patient and understanding. It may take some time for your pull request to be reviewed and merged.
-*Be willing to learn and improve.
-*Thank you for your contributions!
-*After getting the starter files, you need to go to the file directory and run
+Be respectful of other contributors and maintainers.
+Be patient and understanding. It may take some time for your pull request to be reviewed and merged.
+Be willing to learn and improve.
+Thank you for your contributions!
+After getting the starter files, you need to go to the file directory and run
 
     yarn install
 
-*and after that start the dev server.
+and after that start the dev server.
 
     yarn run dev
 
