@@ -3,9 +3,9 @@ import React from 'react';
 const Stories = () => {
     // Sample images, replace with actual images for each story
     const storyImages = {
-        story1: '/path/to/story1-image.jpg',
-        story2: '/path/to/story2-image.jpg',
-        story3: '/path/to/story3-image.jpg'
+        story1: 'https://pbs.twimg.com/profile_images/1692460304599273472/YJgX2Fpu_400x400.jpg',
+        story2: 'https://pbs.twimg.com/profile_images/1692460304599273472/YJgX2Fpu_400x400.jpg',
+        story3: 'https://pbs.twimg.com/profile_images/1692460304599273472/YJgX2Fpu_400x400.jpg'
     };
 
     return (
