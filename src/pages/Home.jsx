@@ -1,6 +1,6 @@
 // Home.js
 import React from 'react';
-import Header from './Header';
+import Header from '../components/Header';
 import HomeImg from '../images/africa.png';
 
 export default function Home() {
