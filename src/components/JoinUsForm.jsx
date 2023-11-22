@@ -37,3 +37,30 @@ export default function JoinUsForm() {
         </div>
     );
 }
+
+
+
+            // {/* Stories section */}
+            // <section className="bg-gray-100 dark:bg-gray-800">
+            //     <div className="container mx-auto px-8 py-16">
+            //         <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Latest Stories</h2>
+            //         <Stories />
+            //     </div>
+            // </section>
+
+            // {/* News section */}
+            // <section className="bg-white dark:bg-gray-900">
+            //     <div className="container mx-auto px-8 py-16">
+            //         <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Developer News</h2>
+            //         <News />
+            //     </div>
+            // </section>
+
+            // {/* Join us section */}
+            // <section className="container mx-auto px-8 py-16">
+            //     <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Become a Member</h2>
+            //     <JoinUsForm />
+            // </section>
+
+            // {/* Footer */}
+            // {/* You can include a Footer component here */}
