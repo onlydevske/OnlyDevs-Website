@@ -5,7 +5,6 @@ const announcements = [
     { id: 1, title: 'Scheduled Maintenance on April 10th', date: 'April 5th' },
     { id: 2, title: 'New Features in Our Community Platform', date: 'April 12th' },
     { id: 3, title: 'Community Guidelines Update', date: 'April 15th' },
-    // ... you can add more announcements
   ];
 export default function Announcements() {
   return (
