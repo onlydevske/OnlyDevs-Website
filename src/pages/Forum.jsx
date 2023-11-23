@@ -20,16 +20,7 @@ const discussions = [
 
 ];
 
-const categories = [
-  'General',
-  'Announcements',
-  'Events',
-  'Support',
-  'Off-Topic',
-  'TypeScript',
-  'Vue.js',
-  'Deno',
-];
+
 
 const recommended = [
   { id: 1, title: 'React 18: What are the new features?', upvotes: 75 },

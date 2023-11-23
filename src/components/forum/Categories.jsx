@@ -1,5 +1,16 @@
 import React from 'react';
 
+
+const categories = [
+    'General',
+    'Announcements',
+    'Events',
+    'Support',
+    'Off-Topic',
+    'TypeScript',
+    'Vue.js',
+    'Deno',
+  ];
 export default function Categories() {
   return (
     <>
