@@ -44,15 +44,7 @@ const recommended = [
          <Categories/>
 
           {/* Discussions List */}
-          <div className="flex-1">
-            {discussions.map((discussion) => (
-              <div key={discussion.id} className="bg-white p-4 rounded-md shadow-md mb-4">
-                <h3 className="font-bold">{discussion.title}</h3>
-                <p className="text-gray-600">{discussion.category}</p>
-                <p className="text-gray-600">Upvotes: {discussion.upvotes}</p>
-              </div>
-            ))}
-          </div>
+        
 
           {/* Recommended Sidebar */}
           <div className="w-1/4 bg-white p-4 rounded-md shadow-md">
