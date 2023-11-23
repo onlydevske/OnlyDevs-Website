@@ -32,7 +32,6 @@ export default function Home() {
         `}
       </style>
       <div className="flex flex-col min-h-screen overflow-hidden">
-        <Header />
         <section className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
           <div className="container mx-auto px-8 flex flex-wrap items-center justify-center">
             {/* Content */}
