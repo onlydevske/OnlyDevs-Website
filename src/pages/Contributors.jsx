@@ -1,24 +1,97 @@
 import React from 'react';
+import { FaFacebookF, FaTwitter, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+// Sample array of contributor data
+const contributors = [
+  {
+    id: 1,
+    name: 'Jane Doe',
+    bio: 'Full Stack Developer with a passion for open source.',
+    photo: 'https://pbs.twimg.com/profile_images/1716131001028456448/zIUdM8_1_400x400.jpg', // Placeholder path to the contributor's photo
+    socials: {
+      github: 'https://github.com/janedoe',
+      linkedin: 'https://www.linkedin.com/in/janedoe',
+      twitter: 'https://twitter.com/janedoe',
+    },
+  },
+  {
+    id: 2,
+    name: 'Jane Doe',
+    bio: 'Full Stack Developer with a passion for open source.',
+    photo: 'https://pbs.twimg.com/profile_images/1716131001028456448/zIUdM8_1_400x400.jpg', // Placeholder path to the contributor's photo
+    socials: {
+      github: 'https://github.com/janedoe',
+      linkedin: 'https://www.linkedin.com/in/janedoe',
+      twitter: 'https://twitter.com/janedoe',
+    },
+  },
+  {
+    id: 3,
+    name: 'Jane Doe',
+    bio: 'Full Stack Developer with a passion for open source.',
+    photo: 'https://pbs.twimg.com/profile_images/1716131001028456448/zIUdM8_1_400x400.jpg', // Placeholder path to the contributor's photo
+    socials: {
+      github: 'https://github.com/janedoe',
+      linkedin: 'https://www.linkedin.com/in/janedoe',
+      twitter: 'https://twitter.com/janedoe',
+    },
+  },
+  {
+    id: 4,
+    name: 'Jane Doe',
+    bio: 'Full Stack Developer with a passion for open source.',
+    photo: 'https://pbs.twimg.com/profile_images/1716131001028456448/zIUdM8_1_400x400.jpg', // Placeholder path to the contributor's photo
+    socials: {
+      github: 'https://github.com/janedoe',
+      linkedin: 'https://www.linkedin.com/in/janedoe',
+      twitter: 'https://twitter.com/janedoe',
+    },
+  },
+  {
+    id: 5,
+    name: 'Jane Doe',
+    bio: 'Full Stack Developer with a passion for open source.',
+    photo: 'https://pbs.twimg.com/profile_images/1716131001028456448/zIUdM8_1_400x400.jpg', // Placeholder path to the contributor's photo
+    socials: {
+      github: 'https://github.com/janedoe',
+      linkedin: 'https://www.linkedin.com/in/janedoe',
+      twitter: 'https://twitter.com/janedoe',
+    },
+  },
+  {
+    id: 6,
+    name: 'Jane Doe',
+    bio: 'Full Stack Developer with a passion for open source.',
+    photo: 'https://pbs.twimg.com/profile_images/1716131001028456448/zIUdM8_1_400x400.jpg', // Placeholder path to the contributor's photo
+    socials: {
+      github: 'https://github.com/janedoe',
+      linkedin: 'https://www.linkedin.com/in/janedoe',
+      twitter: 'https://twitter.com/janedoe',
+    },
+  },
+  // ... Add more contributor objects
+];
 
 export default function Contributors() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
-        <section className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-          <div className="container mx-auto px-8 flex flex-wrap items-center justify-center">
-            <div className="w-full md:w-1/2 flex flex-col  justify-center items-start space-y-6">
-              <h1 className="text-3xl md:text-4xl leading-tight mb-6 font-bold  tracking-tighter">
-                Join <span className="heartbeat">OnlyDevs</span>, the community for developers!
-              </h1>
-              <p className="text-lg mb-6">
-                Dive into a world where coding comes alive, share your knowledge, and learn from the best in a community that champions growth and innovation. Designed with love and passion by developers, for developers.
-              </p>
-              <div className="flex w-full md:w-auto">
-                <input type="email" placeholder="Enter your email" className="p-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-white text-gray-800" />
-                <button className="bg-yellow-600 text-gray-900 rounded-r-lg px-6 py-2 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-700">Join Us</button>
-              </div>
+    <div className="bg-blue-50 min-h-screen p-8">
+    <h1 className="text-center text-3xl text-gray-800 font-bold mb-8 animate-fade-in-down">Our Contributors</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {contributors.map((contributor, index) => (
+        <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md p-4 border border-gray-200 transform hover:scale-105 transition duration-500 ease-in-out">
+          <img src={contributor.photo} alt={`Photo of ${contributor.name}`} className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <h2 className="font-semibold text-xl mb-2">{contributor.name}</h2>
+            <p className="text-gray-600 mb-4">{contributor.bio}</p>
+            <div className="flex justify-center gap-4">
+              <a href={contributor.socials.facebook} target="_blank" rel="noopener noreferrer"><FaFacebookF className="text-yellow-600" /></a>
+              <a href={contributor.socials.twitter} target="_blank" rel="noopener noreferrer"><FaTwitter className="text-yellow-500" /></a>
+              <a href={contributor.socials.github} target="_blank" rel="noopener noreferrer"><FaGithub className="text-gray-700" /></a>
+              <a href={contributor.socials.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedinIn className="text-blue-700" /></a>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      ))}
+    </div>
+  </div>
   );
 }
