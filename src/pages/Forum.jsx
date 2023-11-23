@@ -1,24 +1,95 @@
 import React from 'react';
 
-export default function Forum() {
+const Forum = () => {
+
+const announcements = [
+  { id: 1, title: 'Scheduled Maintenance on April 10th', date: 'April 5th' },
+  { id: 2, title: 'New Features in Our Community Platform', date: 'April 12th' },
+  { id: 3, title: 'Community Guidelines Update', date: 'April 15th' },
+
+];
+
+
+const discussions = [
+  { id: 1, title: 'How to integrate TypeScript in a React project?', upvotes: 42, category: 'TypeScript', replies: 8 },
+  { id: 2, title: 'Best practices for state management in Vue.js', upvotes: 35, category: 'Vue.js', replies: 5 },
+  { id: 3, title: 'Has anyone tried the new Deno runtime?', upvotes: 27, category: 'Deno', replies: 3 },
+
+];
+
+const categories = [
+  'General',
+  'Announcements',
+  'Events',
+  'Support',
+  'Off-Topic',
+  'TypeScript',
+  'Vue.js',
+  'Deno',
+];
+
+const recommended = [
+  { id: 1, title: 'React 18: What are the new features?', upvotes: 75 },
+  { id: 2, title: 'Exploring GraphQL: A Beginner\'s Guide', upvotes: 65 },
+  { id: 3, title: 'Understanding Async/Await in JavaScript', upvotes: 60 },
+];
+
+
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
-        <section className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-          <div className="container mx-auto px-8 flex flex-wrap items-center justify-center">
-            <div className="w-full md:w-1/2 flex flex-col  justify-center items-start space-y-6">
-              <h1 className="text-3xl md:text-4xl leading-tight mb-6 font-bold  tracking-tighter">
-                Join <span className="heartbeat">OnlyDevs</span>, the community for developers!
-              </h1>
-              <p className="text-lg mb-6">
-                Dive into a world where coding comes alive, share your knowledge, and learn from the best in a community that champions growth and innovation. Designed with love and passion by developers, for developers.
-              </p>
-              <div className="flex w-full md:w-auto">
-                <input type="email" placeholder="Enter your email" className="p-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-white text-gray-800" />
-                <button className="bg-yellow-600 text-gray-900 rounded-r-lg px-6 py-2 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-700">Join Us</button>
-              </div>
+    <div className="bg-gray-100 min-h-screen mt-16">
+      <div className="container mx-auto px-4 py-8">
+        {/* Announcements Section */}
+        <div className="bg-white p-4 rounded-md shadow-md mb-6">
+          {announcements.map((announcement) => (
+            <div key={announcement.id} className="flex justify-between items-center bg-yellow-100 p-2 rounded-lg mb-2">
+              <span className="font-medium">{announcement.title}</span>
+              <span className="text-xs">{announcement.date}</span>
             </div>
+          ))}
+        </div>
+
+        {/* Actions Bar */}
+        <div className="flex justify-between items-center mb-6">
+          <button className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition duration-300">Create New Discussion</button>
+          <input type="search" placeholder="Search discussions..." className="border border-gray-300 p-2 rounded w-1/3" />
+        </div>
+
+        {/* Main Content Section */}
+        <div className="flex gap-4">
+          {/* Categories Sidebar */}
+          <div className="w-1/4 bg-white p-4 rounded-md shadow-md">
+            <ul>
+              {categories.map((category) => (
+                <li key={category} className="py-2 text-indigo-600 hover:text-indigo-800 cursor-pointer">{category}</li>
+              ))}
+            </ul>
           </div>
-        </section>
+
+          {/* Discussions List */}
+          <div className="flex-1">
+            {discussions.map((discussion) => (
+              <div key={discussion.id} className="bg-white p-4 rounded-md shadow-md mb-4">
+                <h3 className="font-bold">{discussion.title}</h3>
+                <p className="text-gray-600">{discussion.category}</p>
+                <p className="text-gray-600">Upvotes: {discussion.upvotes}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Recommended Sidebar */}
+          <div className="w-1/4 bg-white p-4 rounded-md shadow-md">
+            <h4 className="font-bold mb-4">Recommended</h4>
+            {recommended.map((discussion) => (
+              <div key={discussion.id} className="mb-2">
+                <h5 className="text-indigo-600 hover:text-indigo-800 cursor-pointer">{discussion.title}</h5>
+                <p className="text-xs">Upvotes: {discussion.upvotes}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+    </div>
   );
-}
+};
+
+export default Forum;
