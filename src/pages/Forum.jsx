@@ -2,6 +2,7 @@ import React from 'react';
 import Announcements from '../components/forum/Announcements';
 import Searchbar from '../components/forum/SearchBar';
 import Categories from '../components/forum/Categories';
+import DiscussionsList from '../components/forum/DiscussionsList';
 
 const Forum = () => {
 
@@ -39,7 +40,7 @@ const recommended = [
          <Categories/>
 
           {/* Discussions List */}
-        
+        <DiscussionsList/>
 
           {/* Recommended Sidebar */}
           <div className="w-1/4 bg-white p-4 rounded-md shadow-md">
